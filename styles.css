@@ -568,6 +568,14 @@ textarea::placeholder {
   object-fit: cover;
 }
 
+.gallery video {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  background: #000;
+}
+
 .gallery figcaption {
   padding: 12px 14px 14px;
   color: var(--muted);

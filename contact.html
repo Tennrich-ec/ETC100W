@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Energizer の問い合わせページ。ローカル版の送信フォームと連絡先メモ。">
+  <title>Contact Us | Energizer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="contact">
+  <a class="skip-link" href="#main">本文へスキップ</a>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-copy"><span>Energizer</span><span>Local Website Pack</span></span>
+      </a>
+      <button class="btn secondary nav-toggle" type="button" data-nav-toggle aria-expanded="false">メニュー</button>
+      <nav class="nav" data-nav data-open="false" aria-label="メインナビゲーション">
+        <a href="etc100w.html" data-nav-link="etc100w">ETC100W</a>
+        <a href="pps2300w1f.html" data-nav-link="pps2300w1f">PPS2300W1F</a>
+        <a href="about.html" data-nav-link="about">About Us</a>
+        <a href="contact.html" data-nav-link="contact">Contact Us</a>
+        <a href="where-to-buy.html" data-nav-link="buy">Where to Buy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="site-shell split">
+        <div>
+          <div class="crumb">CONTACT US</div>
+          <h1>相談しやすい窓口を、<br>ひとつに。</h1>
+          <p class="lead">
+            こちらは本地確認用の問い合わせページです。実運用の連絡先が未確定でも、フォームの見え方と導線を先に整えています。
+          </p>
+          <div class="page-actions">
+            <a class="btn primary" href="where-to-buy.html">購入導線を見る</a>
+            <a class="btn secondary" href="index.html">トップへ戻る</a>
+          </div>
+        </div>
+        <div class="panel image-panel">
+          <img src="assets/pps-detail.jpg" alt="ポータブル電源のポート詳細イメージ">
+          <div class="caption">inquiry / sales / partnership</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="site-shell cards">
+        <div class="panel contact-card">
+          <h2>お問い合わせフォーム</h2>
+          <form onsubmit="return false;">
+            <div class="contact-grid">
+              <label>お名前<input type="text" placeholder="山田 太郎"></label>
+              <label>会社名<input type="text" placeholder="TennRich / 代理店名など"></label>
+            </div>
+            <div class="contact-grid">
+              <label>メールアドレス<input type="email" placeholder="example@domain.com"></label>
+              <label>ご興味のある製品
+                <select>
+                  <option>ETC100W</option>
+                  <option>PPS2300W1F</option>
+                  <option>両方</option>
+                  <option>未定</option>
+                </select>
+              </label>
+            </div>
+            <label>お問い合わせ内容<textarea placeholder="価格、販売条件、仕様の詳細、掲載用素材などをご記入ください。"></textarea></label>
+            <button class="btn primary" type="submit">送信内容を確認</button>
+          </form>
+        </div>
+
+        <div class="panel contact-card">
+          <h2>補足メモ</h2>
+          <div class="contact-note">
+            <strong>このページは仮運用用です。</strong>
+            <p class="small">
+              連絡先、返信先、フォーム送信先はまだ本番値に差し替えていません。
+              本地使用では、この見え方を確認する目的で十分です。
+            </p>
+          </div>
+
+          <div class="muted-box" style="margin-top:16px;">
+            <strong>今後入れ替える項目</strong>
+            <ul>
+              <li>返信用メールアドレス</li>
+              <li>営業窓口の電話番号</li>
+              <li>代理店別の問い合わせ先</li>
+              <li>資料請求用の添付リンク</li>
+            </ul>
+          </div>
+
+          <div class="page-actions">
+            <a class="btn secondary" href="where-to-buy.html">Where to Buy へ</a>
+            <a class="btn secondary" href="about.html">About Us へ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="site-shell footer-inner">
+      <div>
+        <strong>Contact Energizer</strong>
+        <div class="small">ローカル確認用のフォームレイアウト</div>
+      </div>
+      <div class="small">© <span data-year></span> Energizer</div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
